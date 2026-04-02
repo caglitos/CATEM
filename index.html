@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Universidad CATEM</title>
+
     <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container nav">
+      <div class="nav">
         <div class="logo">
-          <img src="../assets/imagotipo.svg" alt="Logo Universidad CATEM" />
+          <img src="/assets/imagotipo.svg" alt="Logo Universidad CATEM" />
         </div>
 
         <nav class="menu">
@@ -23,58 +33,97 @@
     </header>
 
     <!-- HERO -->
-    <section class="hero">
+    <section
+      class="hero"
+      style="
+        background: url(../assets/hero-bg.png) top center / cover no-repeat;
+      "
+    >
       <div class="hero-overlay"></div>
 
       <div class="container hero-content">
         <div class="hero-text">
-          <h1>Somos la universidad<br />de los trabajadores</h1>
+          <h1>Somos la universidad de los trabajadores</h1>
           <p>Estudia donde quieras, cuando quieras</p>
         </div>
 
         <div class="hero-features">
           <div class="feature-card">
-            <div class="feature-icon">💻</div>
-            <p>100% Online,<br />adaptado a tu ritmo</p>
+            <div class="col">
+              <div class="end">
+                <img src="/assets/computer-icon.svg" alt="Computadora" />
+              </div>
+              <div class="start">
+                <p class="card-text">
+                  100% Online,<br />adaptado a
+                  <span class="bold">tu ritmo</span>
+                </p>
+              </div>
+            </div>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">✔</div>
-            <p>Validez Oficial<br />ante la SEP</p>
+            <div class="col">
+              <div class="end">
+                <img src="/assets/graduate-icon.svg" alt="gradiuate-icon" />
+              </div>
+              <div class="start">
+                <p class="card-text">
+                  Validez <span class="bold">Oficial</span><br />ante la SEP
+                </p>
+              </div>
+            </div>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">💬</div>
-            <p>Acompañamiento<br />de tutores</p>
+            <div class="col">
+              <div class="end">
+                <img src="/assets/chat-icon.svg" alt="chat" />
+              </div>
+              <div class="start">
+                <p class="card-text">Acompañamiento<br />de tutores</p>
+              </div>
+            </div>
           </div>
 
           <div class="feature-card">
-            <div class="feature-icon">🎓</div>
-            <p>Amplia oferta<br />educativa</p>
+            <div class="col">
+              <div class="end">
+                <img src="/assets/graduation-icon.svg" alt="Graduación" />
+              </div>
+              <div class="start">
+                <p class="card-text">Amplia oferta<br />educativa</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROPOSITO -->
+    <!-- PROPÓSITO -->
     <section class="purpose section">
       <div class="container purpose-grid">
         <div class="purpose-images">
-          <img
-            src="../assets/student-1.png"
-            alt="Estudiante"
-            class="img-large"
-          />
-          <img
-            src="../assets/student-2.png"
-            alt="Estudiante con laptop"
-            class="img-small top"
-          />
-          <img
-            src="../assets/keyboard.png"
-            alt="Teclado"
-            class="img-small bottom"
-          />
+          <div class="center">
+            <img
+              src="../assets/student-1.png"
+              alt="Estudiante"
+              class="img-large"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="../assets/student-2.png"
+              alt="Estudiante con laptop"
+              class="img-small top"
+            />
+
+            <img
+              src="../assets/keyboard.png"
+              alt="Teclado"
+              class="img-small bottom"
+            />
+          </div>
         </div>
 
         <div class="purpose-text">
@@ -82,17 +131,20 @@
             Nuestro propósito es<br />simple: Ayudarte a
             <span>crecer</span>,<br />sin pausar tu vida
           </h2>
+
           <p>
             Somos una institución 100 % en línea que entiende que el tiempo es
             el recurso más valioso.
           </p>
 
           <ul class="check-list">
-            <li>
+            <li class="row">
+              <img src="/assets/check-yellow-icon.svg " alt=" ✓ " srcset=" " />
               Accede a tus clases y materiales en cualquier momento, las 24
               horas del día.
             </li>
-            <li>
+            <li class="row">
+              <img src="/assets/check-yellow-icon.svg " alt=" ✓ " srcset=" " />
               Organiza tus horarios con libertad y avanza a tu propio ritmo,
               desde donde estés.
             </li>
@@ -104,7 +156,7 @@
     <!-- ABP -->
     <section class="abp section">
       <div class="container">
-        <div class="section-heading center">
+        <div class="section-heading center col">
           <h2>Aprendizaje Basado en <span>Proyectos</span></h2>
           <p>
             Nuestro modelo ABP te coloca en el centro del proceso.<br />
@@ -114,7 +166,8 @@
 
         <div class="steps-grid">
           <div class="step-card">
-            <div class="step-number">1</div>
+            <div class="end"><img src="/assets/1.svg" alt="1" srcset="" /></div>
+
             <h3>Proyectos Reales,<br />resultados reales</h3>
             <p>
               Resuelve problemas y retos prácticos que te conectan con
@@ -123,7 +176,7 @@
           </div>
 
           <div class="step-card">
-            <div class="step-number">2</div>
+            <div class="end"><img src="/assets/2.svg" alt="2" srcset="" /></div>
             <h3>Habilidades que<br />trascienden</h3>
             <p>
               Desarrolla competencias profesionales, liderazgo, pensamiento
@@ -132,7 +185,7 @@
           </div>
 
           <div class="step-card">
-            <div class="step-number">3</div>
+            <div class="end"><img src="/assets/3.svg" alt="3" srcset="" /></div>
             <h3>Tiempo que se transforma<br />en aprendizaje</h3>
             <p>
               Aprovecha cada momento estudiando de manera significativa y
@@ -161,9 +214,11 @@
           </p>
 
           <div class="accordion">
+            <!-- Ítem 1 (Abierto por defecto) -->
             <div class="accordion-item active">
               <button class="accordion-header">
-                Estudia desde cualquier lugar <span>⌃</span>
+                Estudia desde cualquier lugar
+                <img src="/assets/Vector.svg" alt="" />
               </button>
               <div class="accordion-body">
                 <p>
@@ -174,46 +229,104 @@
               </div>
             </div>
 
+            <!-- Ítem 2 -->
             <div class="accordion-item">
               <button class="accordion-header">
-                Flexibilidad de horarios <span>⌄</span>
+                Flexibilidad de horarios <img src="/assets/Vector.svg" alt="" />
               </button>
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+                  egestas vitae scelerisque enim ligula.
+                </p>
+              </div>
             </div>
 
+            <!-- Ítem 3 -->
             <div class="accordion-item">
               <button class="accordion-header">
-                Control de pagos <span>⌄</span>
+                Control de pagos <img src="/assets/Vector.svg" alt="" />
               </button>
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam. Sed nisi.
+                </p>
+              </div>
             </div>
 
+            <!-- Ítem 4 -->
             <div class="accordion-item">
               <button class="accordion-header">
-                Comunicación con docentes <span>⌄</span>
+                Comunicación con docentes
+                <img src="/assets/Vector.svg" alt="" />
               </button>
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                  quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+                  Praesent mauris.
+                </p>
+              </div>
             </div>
 
+            <!-- Ítem 5 -->
             <div class="accordion-item">
               <button class="accordion-header">
-                Biblioteca virtual <span>⌄</span>
+                Biblioteca virtual <img src="/assets/Vector.svg" alt="" />
               </button>
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  nec tellus sed augue semper porta. Mauris massa. Vestibulum
+                  lacinia arcu eget nulla.
+                </p>
+              </div>
             </div>
 
+            <!-- Ítem 6 -->
             <div class="accordion-item">
               <button class="accordion-header">
-                Acreditación de conocimientos <span>⌄</span>
+                Acreditación de conocimientos
+                <img src="/assets/Vector.svg" alt="" />
               </button>
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class
+                  aptent taciti sociosqu ad litora torquent per conubia nostra,
+                  per inceptos himenaeos.
+                </p>
+              </div>
             </div>
 
+            <!-- Ítem 7 -->
             <div class="accordion-item">
               <button class="accordion-header">
-                Seguimiento de tareas <span>⌄</span>
+                Seguimiento de tareas <img src="/assets/Vector.svg" alt="" />
               </button>
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur sodales ligula in libero. Sed dignissim lacinia
+                  nunc. Curabitur tortor.
+                </p>
+              </div>
             </div>
 
+            <!-- Ítem 8 -->
             <div class="accordion-item">
               <button class="accordion-header">
-                Ayuda técnica <span>⌄</span>
+                Ayuda técnica <img src="/assets/Vector.svg" alt="" />
               </button>
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
+                  Maecenas mattis.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -223,7 +336,7 @@
     <!-- PROGRAMAS -->
     <section class="programs section">
       <div class="container">
-        <div class="section-heading center">
+        <div class="section-heading center col">
           <h2>Conoce nuestros <span>programas educativos</span></h2>
           <p>
             Estudiar en CATEM significa equilibrar tus metas personales<br />
@@ -235,10 +348,9 @@
           <div
             class="program-card"
             style="
-              background-image: url(&quot;../assets/program-licenciaturas.png&quot;);
+              background-image: url(&quot;/assets/program-licenciaturas.png&quot;);
             "
           >
-            <div class="program-overlay"></div>
             <div class="program-content">
               <h3>Licenciaturas</h3>
               <p>Termina una licenciatura desde 12 hasta 40 meses</p>
@@ -252,7 +364,6 @@
               background-image: url(&quot;../assets/program-maestrias.png&quot;);
             "
           >
-            <div class="program-overlay"></div>
             <div class="program-content">
               <h3>Maestrías</h3>
               <a href="#" class="btn btn-small">Ver maestrías</a>
@@ -265,7 +376,6 @@
               background-image: url(&quot;../assets/program-doctorados.png&quot;);
             "
           >
-            <div class="program-overlay"></div>
             <div class="program-content">
               <h3>Doctorados</h3>
               <a href="#" class="btn btn-small">Ver doctorados</a>
@@ -278,7 +388,6 @@
               background-image: url(&quot;../assets/program-postdoctorados.png&quot;);
             "
           >
-            <div class="program-overlay"></div>
             <div class="program-content">
               <h3>Postdoctorados</h3>
               <a href="#" class="btn btn-small">Ver postdoctorados</a>
@@ -291,7 +400,6 @@
               background-image: url(&quot;../assets/program-especialidades.png&quot;);
             "
           >
-            <div class="program-overlay"></div>
             <div class="program-content">
               <h3>Especialidades</h3>
               <a href="#" class="btn btn-small">Ver especialidades</a>
@@ -304,7 +412,6 @@
               background-image: url(&quot;../assets/program-capacitacion.png&quot;);
             "
           >
-            <div class="program-overlay"></div>
             <div class="program-content">
               <h3>Capacitación para<br />el trabajo</h3>
               <a href="#" class="btn btn-small">Ver programas</a>
@@ -332,10 +439,14 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-content">
-        <span>📞 555-555-5555</span>
-        <span>🌐 CATEM Nacional</span>
-        <span>✉ contacto@catem.org.mx</span>
+        <img src="/assets/whatsapp-icon.svg" alt="WhatsApp Icon" />
+        <span>555-555-5555</span>
+        <img src="/assets/facebook-icon.svg" alt="Facebook Icon" />
+        <span>CATEM Nacional</span>
+        <img src="/assets/mail-icon.svg" alt="Email Icon" />
+        <span>contacto@catem.org.mx</span>
       </div>
     </footer>
   </body>
+  <script src="/scripts/index.js"></script>
 </html>
