@@ -1,31 +1,6 @@
 /* =========================
    RESET
 ========================= */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Source Sans 3", sans-serif;
-  background: #f2f2f2;
-  color: #222;
-  line-height: 1.6;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
 
 /* =========================
    VARIABLES
@@ -99,47 +74,6 @@ a {
 .btn-small {
   padding: 10px 16px;
   font-size: 0.82rem;
-}
-
-/* =========================
-   HEADER
-========================= */
-.header {
-  background: var(--bg-dark);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 33px 20px;
-}
-
-.logo img {
-  padding-left: 3rem;
-  height: 78px;
-  object-fit: contain;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding-right: 3rem;
-}
-
-.menu a {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: bold;
-  color: #fff;
-  font-size: 0.9rem;
-  transition: 0.2s ease;
-}
-
-.menu a:hover {
-  color: #ffb2b2;
 }
 
 /* =========================
@@ -609,30 +543,6 @@ a {
 .cta-image img {
   max-height: 470px;
   object-fit: contain;
-}
-
-/* =========================
-   FOOTER
-========================= */
-.footer {
-  background: #0f0f11;
-  color: #fff;
-  padding: 22px 0;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  font-size: 0.9rem;
-  color: #d8d8d8;
-}
-.footer-content img {
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
-  margin-right: 10px;
 }
 
 /* =========================
