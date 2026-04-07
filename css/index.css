@@ -556,11 +556,34 @@
   .hero-text h1 {
     font-size: 3rem;
   }
-
-  .purpose-grid,
+  dswe .purpose-grid,
   .desk-grid,
   .cta-grid {
     grid-template-columns: 1fr;
+  }
+
+  .purpose-images {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .purpose-images > .col {
+    flex-direction: row !important;
+    gap: 18px;
+  }
+
+  .img-small.top {
+    min-height: 184px;
+    min-width: 35%;
+    max-height: 184px;
+    max-width: 47%;
+  }
+
+  .img-small.bottom {
+    min-height: 184px;
+    min-width: 35%;
+    max-height: 184px;
+    max-width: 47%;
   }
 
   .cta-image {

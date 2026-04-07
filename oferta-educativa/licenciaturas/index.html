@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Licenciaturas - Oferta Educativa - Universidad Catem</title>
 
-    <link rel="stylesheet" href="/css/of-edu-licenciatura.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../.../../../assets/isotipo.svg"
+    />
+
+    <link rel="stylesheet" href="../../css/of-edu-licenciatura.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +20,17 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+
+    <meta property="og:title" content="UNIVERSIDAD CATEM" />
+    <meta
+      property="og:description"
+      content="La Universidad de los trabajadores. Estudia donde quieras, cuando quieras."
+    />
+    <meta property="og:image" content="../../assets/imagotipo.svg" />
+    <meta property="og:url" content="https://ucatem.mx/" />
+    <meta property="og:site_name" content="Universidad CATEM" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:type" content="website" />
   </head>
   <body>
     <header class="header">
@@ -23,8 +40,8 @@
     <section
       class="hero"
       style="
-        background: url(../../assets/hero-licenciaturas.png) top center / coverk
-          no-repeat;
+        background: url(&quot;../../assets/hero-licenciaturas.png&quot;) top
+          center / cover no-repeat;
       "
     >
       <div class="hero-overlay"></div>
@@ -39,7 +56,10 @@
           <div class="feature-card">
             <div class="col">
               <div class="end">
-                <img src="/assets/check-white-icon.svg" alt="Computadora" />
+                <img
+                  src="../../assets/check-white-icon.svg"
+                  alt="Computadora"
+                />
               </div>
               <div class="start">
                 <p class="card-text">
@@ -53,7 +73,7 @@
           <div class="feature-card">
             <div class="col">
               <div class="end">
-                <img src="/assets/calendar-icon.svg" alt="chat" />
+                <img src="../../assets/calendar-icon.svg" alt="chat" />
               </div>
               <div class="start">
                 <p class="card-text">
@@ -67,7 +87,7 @@
           <div class="feature-card">
             <div class="col">
               <div class="end">
-                <img src="/assets/puzzle-icon.svg" alt="Graduación" />
+                <img src="../../assets/puzzle-icon.svg" alt="Graduación" />
               </div>
               <div class="start">
                 <p class="card-text">
@@ -81,11 +101,44 @@
       </div>
     </section>
 
-    <section>
-      <licenciatura-card
-        title="Mercadotecnia con Acentuación
-en Investigación y Docencia"
-      ></licenciatura-card>
+    <section class="programs section">
+      <div class="container">
+        <div class="section-heading center col">
+          <h2>Conoce nuestros <span>programas educativos</span></h2>
+          <p>
+            Estudiar en CATEM significa equilibrar tus metas personales<br />
+            y profesionales sin sacrificar ninguna
+          </p>
+        </div>
+
+        <div class="program-grid">
+          <licenciatura-card
+            imagen="../../assets/lic-MAID.png"
+            titulo="Mercadotecnia con Acentuación en Investigación y Docencia"
+            text=""
+            document="../../assets/Universidad CATEM - Portadas para brochure ejem.pdf"
+          ></licenciatura-card>
+          <licenciatura-card
+            imagen="../../assets/lic-TAID.png"
+            titulo="Turismo con Acentuación en Investigación y Docencia"
+            text=""
+            document="../../assets/Universidad CATEM - Portadas para brochure ejem.pdf"
+          ></licenciatura-card>
+
+          <licenciatura-card
+            imagen="../../assets/lic-EAIGI.png"
+            titulo="Educación con Acentuación en Investigación, Gestión e Innovación"
+            text=""
+            document="../../assets/Universidad CATEM - Portadas para brochure ejem.pdf"
+          ></licenciatura-card>
+          <licenciatura-card
+            imagen="../../assets/lic-DAID.png"
+            titulo="Derecho con Acentuación en Investigación y Docencia"
+            text=""
+            document="../../assets/Universidad CATEM - Portadas para brochure ejem.pdf"
+          ></licenciatura-card>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
@@ -93,5 +146,5 @@ en Investigación y Docencia"
     </footer>
   </body>
 
-  <script type="module" src="/components/index.js"></script>
+  <script type="module" src="../../components/index.js"></script>
 </html>

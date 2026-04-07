@@ -6,8 +6,13 @@
 
     <title>Universidad CATEM</title>
 
-    <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/isotipo.svg"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +31,11 @@
     <section
       class="hero"
       style="
-        background: url(../assets/hero-bg.png) top center / cover no-repeat;
+        background: url(../assets/hero-bg.png) bottom center / cover no-repeat;
+
+        @media (max-width: 1100px) {
+          background: url(../assets/hero-bg.png) bottom left / cover no-repeat;
+        }
       "
     >
       <div class="hero-overlay"></div>
@@ -322,6 +331,8 @@
             class="program-card"
             style="
               background-image: url(&quot;/assets/program-licenciaturas.png&quot;);
+
+        
             "
           >
             <div class="program-content">
@@ -414,6 +425,6 @@
       <footer-component></footer-component>
     </footer>
   </body>
-  <script src="/scripts/index.js"></script>
-  <script type="module" src="/components/index.js"></script>
+  <script src="./scripts/index.js"></script>
+  <script type="module" src="./components/index.js"></script>
 </html>

@@ -16,28 +16,13 @@ export class LicenciaturaCard extends WebComponentBase {
     const titulo = this.getAttribute("titulo") || "";
     const text = this.getAttribute("text") || "";
     const document = this.getAttribute("document") || "";
+    const cardStylesUrl = new URL("./licenciatura-card.css", import.meta.url)
+      .href;
 
+    // Resolucion estable en local y GitHub Pages.
     this.shadowRoot.innerHTML = `
-      <style>
-        button {
-          padding: 0.75rem 1rem;
-          border: none;
-          border-radius: 8px;
-          cursor: pointer;
-          font-family: inherit;
-        }
-
-        .default {
-          background: #eee;
-          color: #222;
-        }
-
-        .primary {
-          background: #007bff;
-          color: white;
-        }
-      </style>
-
+      <link rel="stylesheet" href="${cardStylesUrl}">
+    
       <div
         class="program-card"
         style="
@@ -47,7 +32,7 @@ export class LicenciaturaCard extends WebComponentBase {
         <div class="program-content">
           <h3>${titulo}</h3>
           <p>${text}</p>
-          <a href="${document}" class="btn btn-small">Mas Informacion</a>
+          <a href="${document}" target="_blank" class="btn btn-small">Mas Informacion</a>
         </div>
       </div>
 

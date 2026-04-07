@@ -11,27 +11,36 @@ export class NavigationBar extends WebComponentBase {
   }
 
   render() {
+    const stylesUrl = new URL("../css/styles.css", import.meta.url).href;
+    const whatsappIcon = new URL("../assets/whatsapp-icon.svg", import.meta.url)
+      .href;
+    const mailIcon = new URL("../assets/mail-icon.svg", import.meta.url).href;
+    const linkedinIcon = new URL("../assets/linkedin-icon.png", import.meta.url)
+      .href;
+    const facebookIcon = new URL("../assets/facebook-icon.svg", import.meta.url)
+      .href;
+
     this.shadowRoot.innerHTML = `
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="${stylesUrl}" />
       
     <div class="container footer-content">
-        <img src="/assets/whatsapp-icon.svg" alt="WhatsApp Icon" />
+        <img src="${whatsappIcon}" alt="WhatsApp Icon" />
         <span>
-          <a href="tel:+14698359627">+1 469 835 9627</a>
+          <a target="_blank" rel="noopener noreferrer" href="tel:+14698359627">+1 469 835 9627</a>
         </span>
-        <img src="/assets/mail-icon.svg" alt="Email Icon" />
+        <img src="${mailIcon}" alt="Email Icon" />
         <span>
-          <a href="mailto:aetncion@ucatem.mx">atencion@ucatem.mx</a>
+          <a target="_blank" rel="noopener noreferrer" href="mailto:aetncion@ucatem.mx">atencion@ucatem.mx</a>
         </span>
-        <img src="/assets/linkedin-icon.png" alt="LinkedIn Icon" />
+        <img src="${linkedinIcon}" alt="LinkedIn Icon" />
         <span>
-          <a href="https://www.linkedin.com/company/universidadcatem" target="_blank" rel="noopener noreferrer">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/universidadcatem">
             UCATEM
           </a>
         </span>
-        <img src="/assets/facebook-icon.svg" alt="Facebook Icon" />
+        <img src="${facebookIcon}" alt="Facebook Icon" />
         <span>
-          <a href="https://www.facebook.com/universidadcatem" target="_blank" rel="noopener noreferrer">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/universidadcatem'">
             UCATEM
           </a>
         </span>  
